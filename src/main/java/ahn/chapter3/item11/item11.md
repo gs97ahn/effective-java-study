@@ -3,7 +3,7 @@
 발생한다.
 
 ### Object 명세서에서 발췌한 규약
-- `equals` 비교에 사용되는 정보가 변경되지 않았따면, 애플리케이션이 실행되는 동안 그 객체의 `hashCode` 메서드는 일관되게 항상 같은 값을 반환해야 한다. 단,
+- `equals` 비교에 사용되는 정보가 변경되지 않았다면, 애플리케이션이 실행되는 동안 그 객체의 `hashCode` 메서드는 일관되게 항상 같은 값을 반환해야 한다. 단,
 애플리케이션을 다시 실행한다면 이 값이 달려져도 상관없다.
 - `equals`가 두 객체가 같다고 판단했다면, 두 객체의 `hashCode`는 똑같은 값을 반환해야 한다.
 - `equals`가 두 객체를 다르게 판단했더라도, 두 객체의 `hashCode`가 서로 다른 값을 반환할 필요는 없다. 단, 다른 값을 반환해야 해시테이블의 성능이 좋아진다.
@@ -38,7 +38,7 @@ public static final class PhoneNumber {
 ```java
 @Test
 void test(){
-        Map<PhoneNumber, String> m=new HashMap<>();
+        Map<PhoneNumber, String> m = new HashMap<>();
         m.put(new PhoneNumber(707,867,5309),"제니");
 
         System.out.println(m.get(new PhoneNumber(707,867,5309)));
