@@ -9,10 +9,6 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Chooser<T> {
     private final List<T> choiceList;
 
-//    public Chooser(Collection<T> choices) {
-//            choiceArray = choices.toArray();
-//        }
-
     public Chooser(Collection<T> choices) {
         choiceList = new ArrayList<>(choices);
     }
