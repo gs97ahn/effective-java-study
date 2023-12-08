@@ -1,4 +1,4 @@
-package ahn.chapter5.item28.chooserTest;
+package ahn.chapter5.item28.chooser;
 
 public class Box {
     private int x;

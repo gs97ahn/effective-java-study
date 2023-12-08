@@ -1,9 +1,6 @@
-package ahn.chapter5.item28.typeTest;
+package ahn.chapter5.item28.type;
 
 import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class TypeTest {
 
