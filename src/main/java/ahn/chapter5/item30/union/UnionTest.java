@@ -1,4 +1,4 @@
-package ahn.chapter5.item30.unionTest;
+package ahn.chapter5.item30.union;
 
 import org.junit.jupiter.api.Test;
 

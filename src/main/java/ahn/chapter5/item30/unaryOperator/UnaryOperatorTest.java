@@ -1,4 +1,4 @@
-package ahn.chapter5.item30.unaryOperatorTest;
+package ahn.chapter5.item30.unaryOperator;
 
 import org.junit.jupiter.api.Test;
 

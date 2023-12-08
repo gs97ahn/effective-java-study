@@ -1,8 +1,7 @@
-package ahn.chapter5.item30.maxTest;
+package ahn.chapter5.item30.max;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
