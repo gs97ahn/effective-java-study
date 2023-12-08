@@ -1,4 +1,4 @@
-package ahn.chapter5.item29.stackTest;
+package ahn.chapter5.item29.stack;
 
 import org.junit.jupiter.api.Test;
 
