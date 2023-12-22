@@ -185,7 +185,12 @@ java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class 
 구체적으로 `Dangerous.pickTwo()`를 호출하면 `Object[]`를 반환하게 되는데 `Object[]`는 `List<Coordinate>[]`의 하위 타입이 아니기 때문에 
 `ClassCastException`이 발생합니다.
 
-### `ClassCastException`에 대한 구체적인 접근
+### 힙 오염
+
+힙 오염은 컴파일 타임에 Unchecked 경고가 일어나면 발생합니다. 그리고 런타임에서 타입이 선언된 변수가 다른 타입의 객체를 참조하게 되면 
+`ClassCastException`으로 이어지게 됩니다.
+
+### `ClassCastException`
 
 일반적으로 `ClassCastException`은 클래스의 형변환이 실패하게 되면 발생합니다.
 
@@ -374,3 +379,7 @@ public class SafeTest {
 
 List를 활용하면 varargs 매개변수 사용을 회피할 수 있습니다. 하지만 반드시 varargs 매개변수를 써야 된다면 타입 안전성을 확실히 확인한 뒤 
 `@SafeVarargs`를 달아야 됩니다.
+
+### 참고
+
+- [https://docs.oracle.com/javase/tutorial/java/generics/nonReifiableVarargsType.html#heap_pollution](https://docs.oracle.com/javase/tutorial/java/generics/nonReifiableVarargsType.html#heap_pollution)

@@ -1,7 +1,5 @@
 package ahn.chapter5.item32.safe;
 
-import ahn.chapter5.item32.dangerous.Coordinate;
-import ahn.chapter5.item32.dangerous.Dangerous;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
