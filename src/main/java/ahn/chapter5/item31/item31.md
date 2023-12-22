@@ -124,6 +124,18 @@ public void popAll(Collection<? super E> dst) {
 
 Get and Put Principle(겟풋 원칙)이라고 부르기도 한다.
 
+#### 생산자와 소비자
+
+PECS 공식에서 생산자와 소비자는 `Collection` 입장에서 고려를 해야됩니다.
+
+`Stack` 클래스에 `pushAll()`은 `Collection`에 어떤것도 추가하지 않고 있고, 즉 읽기만 하고 있기 때문에 생산자입니다.
+
+반면 `popAll()`은 `Collection`에 원소들을 추가하고 있고, 즉 쓰기를 하고 있기 때문에 소비자입니다.
+
+`Collection`이 생산자이자 소비자를 하는 메서드가 있을 수 있습니다. 이럴때는 `extend`나 `super`로 하지 않아야 됩니다. 하지만 이러한 메서드는 
+CQS(Command-Query Separation) 원칙을 어기기 때문에 지양해야 됩니다.
+
+
 ## 와일드카드 타입으로 수정이 필요한 케이스
 
 ### Chooser
@@ -364,3 +376,7 @@ public class SwapTest {
 
 PECS 공식은 생산자(producer)는 extends를 소비자(consumer)는 super를 사용해야 된다는 공식입니다. `Comparable`과 `Comparator`는 모두 
 소비자입니다. 그리고 와일드카드 타입을 활용하면 API가 더욱 유연해지기 때문에 널리 쓰일 라이브러리에는 PECS 공식을 적용한 와일드카드 타입을 적용하는게 좋습니다.
+
+### 참고
+
+- [https://www.baeldung.com/java-generics-pecs](https://www.baeldung.com/java-generics-pecs)
