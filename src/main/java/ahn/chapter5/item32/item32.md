@@ -187,8 +187,8 @@ java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class 
 
 ### 힙 오염
 
-힙 오염은 컴파일 타임에 Unchecked 경고가 일어나면 발생합니다. 그리고 런타임에서 타입이 선언된 변수가 다른 타입의 객체를 참조하게 되면 
-`ClassCastException`으로 이어지게 됩니다.
+힙 오염은 컴파일 타임에 Unchecked 경고가 일어나면 발생합니다. 그리고 런타임에서 타입이 선언된 변수가 다른 타입의 객체를 참조하게 되면 힙 오염이 발생할 수 있고 
+`ClassCastException`으로 이어질 수 있습니다.
 
 ### `ClassCastException`
 
