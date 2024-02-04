@@ -56,7 +56,7 @@ java.lang.ClassCastException: class java.lang.Integer cannot be cast to class ja
 List<String>[] stringLists = new ArrayList<String>[1];
 
 // 제네릭 varargs 매개변수를 받는 메서드
-static void dangerous(List<String>... stringLists)
+static void dangerous(List<String>... stringLists);
 ```
 
 프로그래머가 제네릭 배열을 직접 생성하는 건 허용이 되지 않으며 컴파일타임에 오류를 발생시킨다. 반면 제네릭 varargs 매개변수를 받는 메서드는 경고만 발생시키며 컴파일이 된다. 그 이유는 제네릭이나 매개변수화 타입의 varargs 매개변수를 받는 메서드가 실무에서 매우 유용하기 때문에 언어 설계자는 이 모순을 수용하기로 결정하였다.
